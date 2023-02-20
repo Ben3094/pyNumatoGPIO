@@ -32,7 +32,7 @@ class Channel:
     __lastSetStatus__: bool = False
     @property
     def Status(self) -> bool:
-        # if self.IsOutput:
+        # if self.IsOutput: 
         return self.__lastSetStatus__
         # else:
         #     return self.__parentDevice__.__getChannelsStatus__()[self.__address__]
