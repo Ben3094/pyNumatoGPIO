@@ -31,20 +31,20 @@ class Channel:
 
     __lastSetStatus__: bool = False
     @property
-    def Status(self) -> bool:
+    def State(self) -> bool:
         # if self.IsOutput: 
         return self.__lastSetStatus__
         # else:
         #     return self.__parentDevice__.__getChannelsStatus__()[self.__address__]
-    @Status.setter
-    def Status(self, value: bool) -> bool:
-        if value != self.Status:
+    @State.setter
+    def State(self, value: bool) -> bool:
+        if value != self.State:
             # if self.IsOutput:
             self.__parentDevice__.Write(f"gpio {'set' if value else 'clear'} {self.__NumatoAddress__}")
             self.__lastSetStatus__ = value
             # else:
             #     raise Exception("Impossible to set status when not output")
-        return self.Status
+        return self.State
     
     VDD = 5 # V
     VDD_CODE = 1024
