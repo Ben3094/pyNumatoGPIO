@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+	long_description = fh.read()
 
 with open("requirements.txt", "r", encoding="utf-8") as fh:
-    install_requires = [line.strip() for line in fh.readlines()]
+	install_requires = [line.strip() for line in fh.readlines()]
 
 setup(
     name='pyNumatoGPIO',
-    version='0.0.533',
+    version='0.0.534',
     author='Benjamin SAGGIN',
     description='An abstraction library for Numato GPIO device',
     long_description=long_description,
