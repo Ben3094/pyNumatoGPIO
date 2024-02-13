@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name='pyNumatoGPIO',
-    version='0.0.535',
+    version='0.0.536',
     author='Benjamin SAGGIN',
     description='An abstraction library for Numato GPIO device',
     long_description=long_description,
